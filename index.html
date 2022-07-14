@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link href = "Css_css/estilo.css" rel ="stylesheet ">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
+        </style>
+    <link href = "Estilos_cssAP/styles.css" rel ="stylesheet ">
  
 </head>
 <body>
     <header>
-        <h1 class="titutlo"> Grupo 4  <span> Freelancer </span> </h1>
+        <h1 class="titulo"> Grupo 4  <span> Freelancer </span> </h1>
     </header>
-    
+    <div class="nav-bg"> 
     <nav class="navegacion-principal contenedor"> 
         <a href = "Inicio.html">Inicio </a>
         <a href = "Nosotros.html">Nosotros </a>
@@ -22,26 +25,31 @@
         <a href = "apulamarin.html">Andrea Pulamarin</a>
         <a href = "Lcabascango.html">Luis Cabascango</a>
     </nav>
+   </div> 
+      
+    <section class="hero">
+        <div class="contenido-hero"> 
+        <h2 class="titulo" > Diseño y Desarrollo Web <span>Freelancer </span> </h2>
 
-         <img scr = "foto.jpg" alt=""> 
-         
-    <section>
-        <H2>Diseño y Desarrollo Web Freelancer</H2>
+        <div class="ubicacion">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <circle cx="12" cy="11" r="3" />
             <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
           </svg>
         <p>Pichincha Cayambe</p>
-
-        <a href="">Contactar</a>
+  
+       </div>
+       <a class="boton" href="#">Contactar</a> 
+    </div>
     </section>
     
     
-    <main>
+    <main class ="contenedor sombra">
         <h2>Mis Servicios</h2>
 
-        <section>
+            <div class =" servicios"> 
+            <section class="servicio">
             <h3>Diseño Web</h3>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -53,7 +61,7 @@
             <p>Morbi dapibus viverra ante, id imperdiet elit rutrum elementum. Proin a urna efficitur, convallis leo id, interdum ligula. Integer egestas nibh lorem</p>
         </section>
 
-        <section>
+        <section class="servicio">
             <h3>Aplicaciones Moviles</h3>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -72,7 +80,7 @@
               </svg>
             <p>Etiam scelerisque et velit sit amet sodales. Suspendisse convallis condimentum turpis vitae lacinia. Duis at eros sem. Proin vitae scelerisque nulla. In nisl sem, vehicula ac facilisis et, euismod eget enim. Etiam dapibus suscipit nulla.</p>
         </section>
-
+        <section class="servicio">
         <h3>E-Commerce</h3>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -82,40 +90,44 @@
             <line x1="11" y1="15" x2="13" y2="15" />
           </svg>
           <p>Etiam scelerisque et velit sit amet sodales. Suspendisse convallis condimentum turpis vitae lacinia. Duis at eros sem. Proin vitae scelerisque nulla. In nisl sem, vehicula ac facilisis et, euismod eget enim. Etiam dapibus suscipit nulla.</p>
-    </main>
+        </section>
+        </div>
+       
     
         <section>
             <h2>Contactos</h2>
-            <form action="">
+            <form class="formulario">
                 <fieldset>
                     <legend> Contactanos llenando el formulario </legend>
-                    <div> 
+                    <div class ="contenedor-campos"> 
+                    <div class="campo"> 
                         <label for =""> Nombre</label>
-                        <input type="text" placeholder="Nombre"> 
+                        <input class="input-text" type="text" placeholder="Nombre"> 
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for =""> Telefono</label> 
-                        <input type="tel" placeholder="Telefono"> 
+                        <input  class="input-text" type="tel" placeholder="Telefono"> 
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for ="">Correo </label> 
-                        <input type="email" placeholder="Email"> 
+                        <input class="input-text" type="email" placeholder="Email"> 
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for =""> Mensaje</label> 
-                        <textarea name="" id="" cols="30" rows="10"> </textarea>
+                        <textarea class="input-text" name="" id="" cols="30" rows="10"> </textarea>
                     </div>
+                </div>
 
-                   <div>
-                    <input type="submit" value="Enviar">
-                    <button type="submit" >Enviar</button>
+                   <divm class = "alinear-derecha flex">
+                    <input class="boton w-100" type="submit" value="Enviar">
                    </div>
 
                 </fieldset>
             </form>
         </section>
+    </main>
 
-        <footer>
+        <footer class ="footer">
             <p>Todos los derechos reservados para Andrea Pulamarin</p>
         </footer>
 </body>
